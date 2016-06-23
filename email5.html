@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <link type = "text/css" rel = "stylesheet" href = "stylesheet.css"/>
+ <title>Letter to Authors (accept but wait for edited version)</title>
+     
+ <script type = "text/javascript">
+  function subMit(){
+  var txtName = document.getElementById("txtName");
+  var txtOutput = document.getElementById("txtOutput");
+  var lastName = Lastname.value;
+  var edName = Edname.value;
+  var artTitle = Arttitle.value;
+    
+   txtOutput.value = "Subject line: Your Manuscript Submitted to the JBI \n \n" + "Dear Dr./Prof. "+ lastName +",\n \nWe are pleased to inform you that your manuscript, " + artTitle + ", has been accepted for publication in the Journal of Bioethical Inquiry (http://bioethicalinquiry.com/)." + "\n \nWe next will send your paper to our copy editor.  Both our copy editor and I will review your paper and, once copy-edited, I will contact you via e-mail so that you may review, confirm, and/or adjust any changes we have made and clarify any questions we may have." + ",\n \nPlease remember to quote the manuscript number, " + artTitle + ", whenever inquiring about your manuscript, and do not hesitate to contact me with any questions or concerns." + "\n \nWe look forward to publishing your paper." + "\n \nWith best regards, \n" + edName 
+  }
+ </script>
+ </head>
+    
+ <body id = "body1">
+     <div id = "header">
+        <img src = "image/title.png" align = "center" width = "423px" height = "126px">
+     </div>
+     <br>
+     <br>
+     <div class = "wrapper">
+        <h1>Letter to Authors (accept but wait for edited version) Form</h1>
+        
+            <div class = "emailForm5">
+            <form name = "Email" action = "" align =  "center">
+                <p class = "email">
+                    <b>Subject line</b>: Your Manuscript Submitted to the JBI
+                    <br><br>
+Dear Dr./Prof. <input type = "text" id = "Lastname" placeholder = "Last Name"/>,
+<br><br>
+We are pleased to inform you that your manuscript, "<input type = "text" id = "Arttitle" placeholder = "Article Title"/>," has been accepted for publication in the <i>Journal of Bioethical Inquiry</i> (http://bioethicalinquiry.com/).
+<br><br>
+We next will send your paper to our copy editor.  Both our copy editor and I will review your paper and, once copy-edited, I will contact you via e-mail so that you may review, confirm, and/or adjust any changes we have made and clarify any questions we may have.
+<br><br>
+Please remember to quote the manuscript number, "<input type = "text" id = "Arttitle" placeholder = "Article Title"/>," whenever inquiring about your manuscript, and do not hesitate to contact me with any questions or concerns.
+<br><br>
+We look forward to publishing your paper.
+<br><br>
+With best regards,<br>
+<input type = "text" id = "Edname" placeholder = "Ed. Name"/>
+
+                </p>
+                <div align = "center">
+                    <input type = "generate" value = "Generate" onclick = "subMit();"/>
+                </div>
+                <textarea type = "text" id = "txtOutput" name="review" rows="10" cols="80"> </textarea>
+                     
+            </form>
+            
+         </div>
+            <div class = "push"></div>
+     </div>
+        <footer>Copyright &copy; 2015</footer>
+  
+ </body>
+</html>

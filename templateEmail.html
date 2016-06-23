@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <link type = "text/css" rel = "stylesheet" href = "stylesheet.css"/>
+ <title>Letter to Invite a Peer Reviewer</title>
+     
+ <script type = "text/javascript">
+  function subMit(){
+  var txtName = document.getElementById("txtName");
+  var txtOutput = document.getElementById("txtOutput");
+  var lastName = Lastname.value;
+  var edName = Edname.value;
+  var manNum = Mannum.value;
+  var artTitle = Arttitle.value;
+  var abstract1 = Abstract1.value;
+  var webLink = Weblink.value;
+  var logName = Logname.value;
+  var pasCode = Pascode.value; 
+      
+  var edComm = Edcomm.value;
+  var revComm = Revcomm.value;
+  var revComm2 = Revcomm2.value;      
+  txtOutput.value = "Hi there, " + name + "!"
+  }
+ </script>
+ </head>
+    
+ <body id = "body1">
+     <div id = "header">
+        <img src = "image/title.png" align = "center" width = "423px" height = "126px">
+     </div>
+     <br>
+     <br>
+     <div class = "wrapper">
+        <h1>Letter to Authors Form</h1>
+        <div class = "emailForm">
+            <form name = "Email" action = "" align =  "center">
+                <p class = "email">
+                <input type = "text" id = "txtName" placeholder = " "/>
+                <input type = "text" id = "txtName" placeholder = " "/>
+                <input type = "text" id = "txtName" placeholder = " "/>
+                <input type = "text" id = "txtName" placeholder = " "/>
+                <input type = "text" id = "txtName" placeholder = " "/>
+                <input type = "text" id = "txtName" placeholder = " "/>
+                <input type = "text" id = "txtName" placeholder = " "/>
+                <input type = "text" id = "txtName" placeholder = " "/>
+                </p>
+                <div align = "center">
+                    <input type = "generate" value = "Generate" onclick = "subMit();"/>
+                </div>
+                <textarea type = "text" id = "txtOutput" name="review" rows="10" cols="80"> </textarea>
+                     
+            </form>
+         </div>
+            <div class = "push"></div>
+     </div>
+        <footer>Copyright &copy; 2015</footer>
+  
+ </body>
+</html>

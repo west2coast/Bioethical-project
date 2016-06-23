@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <link type = "text/css" rel = "stylesheet" href = "stylesheet.css"/>
+ <title>Letter to Invite a Peer Reviewer</title>
+     
+ <script type = "text/javascript">
+  function subMit(){
+  var txtName = document.getElementById("txtName");
+  var txtOutput = document.getElementById("txtOutput");
+  var lastName = Lastname.value;
+  var edName = Edname.value;
+  var manNum = Mannum.value;
+  var artTitle = Arttitle.value;
+  var abstract1 = Abstract1.value;
+  var webLink = Weblink.value;
+  var logName = Logname.value;
+  var pasCode = Pascode.value;      
+      txtOutput.value = "Subject line: Request for Peer Review from the Journal of Bioethical Inquiry \n \n \n" + "Dear Dr./Prof. " + lastName + ",\n \nWe have not formally met, but because of your expertise as well as experience in bioethics, I would like to invite you to be a reviewer of the following manuscript that has been submitted to the Journal of Bioethical Inquiry. \n \n" + "As you may know, the Journal of Bioethical Inquiry (http://bioethicalinquiry.com/) is an international and interdisciplinary peer-reviewed publication whose mission is to create a forum for dialogue across conventional academic boundaries and for exploring ethical, cultural, social, and legal perspectives in medicine, healthcare, the life sciences, and biotechnology.  We like to invite reviewers who have expertise in a submission’s specific topic area as well as beyond the specific topic area. \n \n" + "Your name was raised as an expert in this particular area. \n \n" + "The paper’s abstract as well as instructions for accepting or declining this invitation are included below. \n \n" + "I appreciate your consideration.  If you have any questions, please do not hesitate to contact the JBI (http://bioethicalinquiry.com/). Further information for reviewers is available from the JBI website at http://bioethicalinquiry.com/submissions/reviewers/. \n \n" + "With kind regards, \n" + edName + "\n \nTo decline this invitation to review, please reply to this e-mail.  As possible, we would appreciate names of potential reviewers you might know in this area, perhaps colleagues or research collaborators. \n \n" + "Manuscript Number: " + manNum + "\nTitle: " + artTitle + "\nAbstract: " + abstract1 + "\n \nTo accept this review, please visit this website: " + webLink + "\n \nYour Login: " + logName + "\nPassword: " + pasCode + ""
+      
+  }
+ </script>
+ </head>
+    
+ <body id = "body1">
+     <div id = "header">
+        <img src = "image/title.png" align = "center" width = "423px" height = "126px">
+     </div>
+     <br>
+     <br> 
+     <div class = "wrapper">
+        <h1>Letter to Invite a Peer Reviewer Form</h1>
+        <div class = "emailForm">
+            <form name = "Email" action = "" align =  "center">
+                <p class="email">
+                    <b>Subject line</b>: Request for Peer Review from the Journal of Bioethical Inquiry
+                    <br><br>
+                    Dear Dr./Prof. <input type = "text" id = "Lastname" placeholder = "Last Name"/>,
+                    <br><br>
+                    We have not formally met, but because of your expertise as well as experience in bioethics, I would like to invite you to be a reviewer of the following manuscript that has been submitted to the <i>Journal of Bioethical Inquiry</i>.
+                    <br><br>
+                    As you may know, the <i>Journal of Bioethical Inquiry</i> (http://bioethicalinquiry.com/) is an international and interdisciplinary peer-reviewed publication whose mission is to create a forum for dialogue across conventional academic boundaries and for exploring ethical, cultural, social, and legal perspectives in medicine, healthcare, the life sciences, and biotechnology.  We like to invite reviewers who have expertise in a submission’s specific topic area as well as beyond the specific topic area.
+                    <br><br>
+                    Your name was raised as an expert in this particular area.
+                    <br><br>
+                    The paper’s abstract as well as instructions for accepting or declining this invitation are included below.
+                    <br><br>
+                    I appreciate your consideration.  If you have any questions, please do not hesitate to contact the <i>JBI</i> (http://bioethicalinquiry.com/).  Further information for reviewers is available from the <i>JBI</i> website at 
+http://bioethicalinquiry.com/submissions/reviewers/.
+                    <br><br>
+                    With kind regards,
+                    <br>
+                <input type = "text" id = "Edname" placeholder = "Assoc. Ed. Real Name"/>
+                    <br><br>
+                    To decline this invitation to review, please reply to this e-mail. As possible, we would appreciate names of potential reviewers you might know in this area, perhaps colleagues or research collaborators.
+                    <br><br>
+                    Manuscript Number: &nbsp; <input type = "text" id = "Mannum" placeholder = "Man. #"/><br>
+                    Title: &nbsp; <input type = "text" id = "Arttitle" placeholder = "Article Title"/><br>
+                    Abstract: &nbsp; <input type = "text" id = "Abstract1" placeholder = "Abstract"/><br><br>
+                    To accept this review, please visit this website: &nbsp; <input type = "text" id = "Weblink" placeholder = "Web URL"/> <br><br>
+                Your Login: &nbsp; <input type = "text" id = "Logname" placeholder = "Login Name"/><br>
+                Your Password: &nbsp; <input type = "text" id = "Pascode" placeholder = "Password"/></p>
+                <div align = "center">
+                    <input type = "generate" value = "Generate" onclick = "subMit();"/>
+                </div>
+                <textarea type = "text" id = "txtOutput" name="review" rows="10" cols="80"></textarea>
+                     
+            </form>
+         </div>
+            <div class = "push"></div>
+     </div>
+        <footer>Copyright &copy; 2015</footer>
+  
+ </body>
+</html>

@@ -1,0 +1,127 @@
+-- Database: `journal`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `manuscripts`
+--
+
+CREATE TABLE IF NOT EXISTS `manuscripts` (
+  `ID` int(11) NOT NULL,
+  `Username` varchar(40) NOT NULL,
+  `ArticleType` varchar(40) NOT NULL,
+  `SymposiumName` varchar(40) NOT NULL,
+  `SubmissionTitle` varchar(100) NOT NULL,
+  `FirstAuthor` varchar(100) NOT NULL,
+  `SecondAuthor` varchar(100) NOT NULL,
+  `ThirdAuthor` varchar(100) NOT NULL,
+  `FourthAuthor` varchar(100) NOT NULL,
+  `FunderName` varchar(100) NOT NULL,
+  `GrantNumber` varchar(100) NOT NULL,
+  `GrantRecipient` varchar(100) NOT NULL,
+  `Abstract` mediumtext NOT NULL,
+  `Comments` mediumtext NOT NULL,
+  `File1` varchar(50) NOT NULL,
+  `File2` varchar(50) NOT NULL,
+  `File3` varchar(50) NOT NULL,
+  `File4` varchar(50) NOT NULL,
+  `File5` varchar(50) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `manuscripts`
+--
+
+INSERT INTO `manuscripts` (`ID`, `Username`, `ArticleType`, `SymposiumName`, `SubmissionTitle`, `FirstAuthor`, `SecondAuthor`, `ThirdAuthor`, `FourthAuthor`, `FunderName`, `GrantNumber`, `GrantRecipient`, `Abstract`, `Comments`, `File1`, `File2`, `File3`, `File4`, `File5`) VALUES
+(0, 'Chris', 'Original Research', 'test', ' test one', 'test tests', 'errd', '', '', 'yehe', '151654', 'hsdyhsd', ' dwuihdwiouweqdf', ' hurhfgruior', 'git.doc', 'git2.doc', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `userinfo`
+--
+
+CREATE TABLE IF NOT EXISTS `userinfo` (
+  `ID` int(10) NOT NULL,
+  `First` varchar(40) NOT NULL,
+  `Last` varchar(40) NOT NULL,
+  `AcademicDegrees` varchar(40) NOT NULL,
+  `Organizations` varchar(100) NOT NULL,
+  `Email` varchar(40) NOT NULL,
+  UNIQUE KEY `ID` (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `userinfo`
+--
+
+INSERT INTO `userinfo` (`ID`, `First`, `Last`, `AcademicDegrees`, `Organizations`, `Email`) VALUES
+(17, 'TestFi', 'TestLa', '', '', 'test@test.com'),
+(18, 'Chris', 'Tomsyck', '', '', 'a@bc.com'),
+(19, 'Testing', 'Test', '', '', 't@t.com'),
+(20, 'Jim', 'Black', '', '', 'assoc@abc.com'),
+(21, 'tege', 'krkr', '', '', 'hssgs@jhdjf.com'),
+(22, 'cddee', 'frwef', '', '', 'nahah@aba.com'),
+(23, 'hghdwe', 'ygyuwewe', '', '', 'ab@de.com'),
+(24, 'ffjuewu', 'eeueo', '', '', 'a@d.com'),
+(25, 'jsuys', 'hehehe', '', '', 'are@d.com'),
+(26, 'jsuys', 'hehehe', '', '', 'are@d.com'),
+(27, 'jsuys', 'hehehe', '', '', 'are@d.com'),
+(28, 'ssdfe', 'eer', '', '', 'abc@defghij.com'),
+(29, 'works', 'yes', 'worked', 'aasu', 'ab@dec.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `userroles`
+--
+
+CREATE TABLE IF NOT EXISTS `userroles` (
+  `Role` int(2) NOT NULL,
+  `Description` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `userroles`
+--
+
+INSERT INTO `userroles` (`Role`, `Description`) VALUES
+(1, 'Administration'),
+(2, 'Associate Editor'),
+(3, 'Submitter'),
+(4, 'Reviewer');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Username` varchar(40) NOT NULL,
+  `Password` varchar(40) NOT NULL,
+  `Role` int(10) NOT NULL DEFAULT '3',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=30 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`ID`, `Username`, `Password`, `Role`) VALUES
+(17, 'Test', 'T1esting', 3),
+(18, 'Chris', 'C1hrischris', 1),
+(19, 'test1', 'T1esttest', 1),
+(20, 'assoc', 'A1ssociate', 3),
+(21, 'works', 'W1orkscddd', 3),
+(22, 'test', 'E1hsjsjdkdk', 3),
+(23, 'gebebe', 'E1gdgdCb3', 3),
+(24, 'hsgsg', 'F1jdjdjd', 3),
+(25, 'test2', 'abcD3her', 3),
+(26, 'test2', 'abcD3her', 3),
+(27, 'test2', 'abcD3her', 3),
+(28, 'teghehge', 'W1bchjke', 3),
+(29, 'testing123', 'abd!cefddHeeeA1', 3);

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <link type = "text/css" rel = "stylesheet" href = "stylesheet.css"/>
+ <title>Letter to Un-Invite Reviewer</title>
+     
+ <script type = "text/javascript">
+  function subMit(){
+  var txtName = document.getElementById("txtName");
+  var txtOutput = document.getElementById("txtOutput");
+  var lastName = Lastname.value;
+  var edName = Edname.value;
+  var manNum = Mannum.value;
+  var artTitle = Arttitle.value;
+
+  txtOutput.value = "Subject line: Request for Peer Review from the Journal of Bioethical Inquiry \n \n" + "Dear Dr./Prof. " + lastName + ",\n \nAs you will recall, you kindly agreed to review the following manuscript: \n \n" + "Manuscript Number: " + manNum + "\nTitle: " + artTitle + "\n \nWe have currently received the other invited reviews on this paper and, in the interest of getting feedback to the authors, we are ready to submit a decision.  If you have not already begun your review, I am happy to relinquish you from this task with our sincerest thanks for your time.  If you have begun your review, you may send it to me when you are ready, and I will ensure that the authors receive your (blinded) comments and suggestions. \n \n" + "I wish to thank you for your kind participation, and I hope we may call up on your expertise some other time. \n \n" + "Thank you very much. \n \n" + "Sincerely, \n" + edName
+  }
+ </script>
+ </head>
+    
+ <body id = "body1">
+     <div id = "header">
+        <img src = "image/title.png" align = "center" width = "423px" height = "126px">
+     </div>
+     <br>
+     <br>
+     <div class = "wrapper">
+        <h1>Letter to Un-Invite Reviewer Form</h1>
+        <div class = "emailForm2">
+         
+            
+            <form name = "Email" action = "" align =  "center">
+                <p class = "email"><b>Subject line</b>: Request for Peer Review from the Journal of Bioethical Inquiry<br><br> 
+                    Dear Dr./Prof. &nbsp; <input type = "text" id = "Lastname" placeholder = "Last Name"/>, <br><br>
+                    As you will recall, you kindly agreed to review the following manuscript: <br><br>
+                    Manuscript Number: &nbsp; <input type = "text" id = "Mannum" placeholder = "Manuscript #"/> <br>
+                    Title: &nbsp; <input type = "text" id = "Arttitle" placeholder = "Article Title"/> <br><br>
+                    We have currently received the other invited reviews on this paper and, in the interest of getting feedback to the authors, we are ready to submit a decision. If you have not already begun your review, I am happy to relinquish you from this task with our sincerest thanks for your time. If you have begun your review, you may send it to me when you are ready, and I will ensure that the authors receive your (blinded) comments and suggestions. <br><br>
+                    I wish to thank you for your kind participation, and I hope we may call up on your expertise some other time.<br><br>
+                    Thank you very much. <br><br>
+
+                    Sincerely,<br> 
+                <input type = "text" id = "Edname" placeholder = "Assoc. Ed. Name"/>
+                </p>    
+                <div align = "center">
+                    <input type = "generate" value = "Generate" onclick = "subMit();"/>
+                </div>
+                <textarea type = "text" id = "txtOutput" name="review" rows="10" cols="80"> </textarea>
+                     
+            </form>
+         
+         </div>
+            <div class = "push"></div>
+     </div>
+        <footer>Copyright &copy; 2015</footer>
+  
+ </body>
+</html>

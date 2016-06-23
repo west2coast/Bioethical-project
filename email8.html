@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <link type = "text/css" rel = "stylesheet" href = "stylesheet.css"/>
+ <title>Letter to Authors (reject after review)</title>
+     
+ <script type = "text/javascript">
+  function subMit(){
+  var txtName = document.getElementById("txtName");
+  var txtOutput = document.getElementById("txtOutput");
+  var lastName = Lastname.value;
+  var edName = Edname.value;
+  var artTitle = Arttitle.value;
+  var edComm = Edcomm.value;
+  var revComm = Revcomm.value;
+  var revComm2 = Revcomm2.value;
+  
+  txtOutput.value = "Subject line: Your Manuscript Submitted to the JBI \n \n" + "Dear Dr./Prof. "+ lastName +",\n \nWe have received the decision from the Handling Editor on your manuscript, " + artTitle + ", which you submitted to the Journal of Bioethical Inquiry (http://bioethicalinquiry.com/)." + "\n \nWith regret, I must inform you that, based on the advice received, the Editors have decided that your manuscript cannot be accepted for publication in the Journal of Bioethical Inquiry at this time." + "\n \nBelow, please find the reviewers’ comments for your perusal." + "\n \nI would like to thank you very much for forwarding your manuscript to us for consideration and wish you every success in finding an alternative place of publication." + "\n \nWith kind regards, \n" + edName + "\n \nComments for author(s):" + "\n \nHandling Editor: " + edComm + "\n \nReviewer Comments: " + revComm + "\n \nReviewer Comments: " + revComm2
+  }
+ </script>
+ </head>
+    
+ <body id = "body1">
+     <div id = "header">
+        <img src = "image/title.png" align = "center" width = "423px" height = "126px">
+     </div>
+     <br>
+     <br>
+     <div class = "wrapper">
+        <h1>Letter to Authors (reject after review) Form</h1>
+        
+            <div class = "emailForm8">
+            <form name = "Email" action = "" align =  "center">
+                <p class = "email">
+                <b>Subject line</b>: Your Manuscript Submitted to the JBI<br>                                 <br>
+                    Dear Dr./Prof. <input type = "text" id = "Lastname" placeholder = "Last Name"/>, <br><br>
+
+We have received the decision from the Handling Editor on your manuscript, "<input type = "text" id = "Arttitle" placeholder = "Article Title"/>"  which you submitted to the <i>Journal of Bioethical Inquiry</i> (http://bioethicalinquiry.com/). <br><br>
+
+                    With regret, I must inform you that, based on the advice received, the Editors have decided that your manuscript cannot be accepted for publication in the <i>Journal of Bioethical Inquiry</i> at this time.<br><br>
+
+Below, please find the reviewers’ comments for your perusal. <br><br>
+
+I would like to thank you very much for forwarding your manuscript to us for consideration and wish you every success in finding an alternative place of publication.<br><br>
+
+With kind regards,<br>
+<input type = "text" id = "Edname" placeholder = "Ed. Name"/><br><br><br>
+
+
+Comments for author(s): <br><br>
+
+                    Handling Editor: <br> <textarea type = "text" id = "Edcomm" placeholder = "Assoc. Ed. Comments" rows="10" cols="80"> </textarea><br><br>
+
+Reviewer Comments: <br> <textarea type = "text" id = "Revcomm" placeholder = "Reviewer 2 Comments" rows="10" cols="80"> </textarea> <br><br>
+
+Reviewer Comments: <br> <textarea type = "text" id = "Revcomm2" placeholder = "Reviewer 1 Comments" rows="10" cols="80"> </textarea>
+                </p>
+                <div align = "center">
+                    <input type = "generate" value = "Generate" onclick = "subMit();"/>
+                </div>
+                <textarea type = "text" id = "txtOutput" name="review" rows="10" cols="80"> </textarea>
+                     
+            </form>
+            
+         </div>
+            <div class = "push"></div>
+     </div>
+        <footer>Copyright &copy; 2015</footer>
+  
+ </body>
+</html>

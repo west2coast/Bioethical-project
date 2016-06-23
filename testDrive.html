@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>textBoxes.html</title>
+     <link rel = "stylesheet"
+   type = "text/css"
+   href = "textBoxes.css" />
+ <script type = "text/javascript">
+  function submit(){
+  var txtName = document.getElementById("txtName");
+  var txtOutput = document.getElementById("txtOutput");
+  var name = txtName.value;
+  txtOutput.value = "Hi there, " + name + "!"
+  }
+ </script>
+ 
+ </head>
+ <body>
+ <h1>Text Box Input and Output</h1>
+
+<form name = "Email" action = "" align =  "center">
+                 <input type = "text" id = "txtName" />
+                <input/>
+                <input/>
+                <input/>
+                <input/>
+                <input/>
+                <input/>
+                <input/>
+                <div align = "center">
+                    <input type = "generate" value = "Generate" onclick = "submit();"/>
+                </div>
+                     <input type = "text" id = "txtOutput" />
+ </form>
+ </body>
+</html>
