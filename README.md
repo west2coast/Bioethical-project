@@ -4,5 +4,5 @@ For my Software Engineering course my team chose to build a manuscript submissio
 Team Members: 
 Chris Tomsyck (Team Leader) - database, php
 Jeffery Young - database, php, css, html, javascript
-Chris West - php, css, html, javascript
+Chris West -css, php, html, javascript
 Andrew Cooper - documentation, presenter
