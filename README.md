@@ -7,4 +7,4 @@ Jeffery Young - Database, PHP, CSS, HTML, Javascript <br>
 Chris West - CSS, PHP, HTML, Javascript  <br>
 Andrew Cooper - Documentation and Presenter <br>
 
-For the using and implementing the accordian we followed a blogger's tutorial which has been commented in the CSS and JavaScript.
+For using and implementing the accordian, we followed a blogger's tutorial which has been commented in the CSS and JavaScript.
