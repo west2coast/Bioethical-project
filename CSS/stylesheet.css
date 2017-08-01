@@ -568,7 +568,7 @@ td {
 }
 
 
-/*----- Accordion -----*/
+/*----- For the Accordion we followed a online tutorial http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery -----*/
 
 .accordion,
 .accordion * {
@@ -585,7 +585,7 @@ td {
 }
 
 
-/*----- Section Titles -----*/
+/*----- Accordion Section Titles -----*/
 
 .accordion-section-title {
     width: 100%;
@@ -612,7 +612,7 @@ td {
 }
 
 
-/*----- Section Content -----*/
+/*----- Accordion Section Content -----*/
 
 .accordion-section-content {
     padding: 15px;
