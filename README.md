@@ -1,5 +1,5 @@
 # Bioethical Inquiry Manuscript Submission Form
-For my Software Engineering course my team chose to build a manuscript submission form for a client. 
+For my Software Engineering course, my team chose to build a manuscript submission form for a client. 
 
 <b>Team Members:</b> <br>
 Chris Tomsyck (Team Leader) - Database, PHP <br>
